@@ -1,0 +1,391 @@
+a
+    color: $black
+    &:hover
+        color: inherit
+        text-decoration: none
+
+body
+    line-height: 1
+
+.btn-classic
+    width: 153px
+    height: 42px
+    font-size: 13px
+
+    text-transform: uppercase
+    color: $white
+    +inner-item-center
+
+    background: $main-color
+
+
+.nav
+    background: $black
+    min-width: 56px
+    &__inner
+        display: flex
+        justify-content: space-between
+        padding: 8px 0 10px
+        .btn-classic
+            background: $creamy-color
+            height: 38px
+            color: $black
+    .menu
+        display: flex
+        margin-bottom: 0
+        &__item
+            width: 105px
+            height: 35px
+            border-right: 1px solid $grey
+
+            a
+                color: $white
+            +inner-item-center
+            &:last-child
+                border: none
+
+.submenu
+    min-height: 93px
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 15px 0
+    &__nav
+        display: flex
+    .logo
+        margin-right: 44px
+
+    .menu-btn
+        display: flex
+        align-items: center
+        margin-right: 33px
+        &__rectangle
+            width: 37px
+            height: 37px
+            margin-right: 14px
+            border: 1px solid $black
+            border-radius: 3px
+            +inner-item-center
+        &__text
+            display: flex
+            align-items: center
+        .btn-classic
+            color: $white
+
+.arrow-left
+    display: block
+    position: relative
+    width: 12px
+    height: 47px
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        right: 6px
+        height: 23px
+        width: 2px
+        background: $white
+        transform: rotate(25deg)
+        border-radius: 3px
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        top: 19px
+        right: 6px
+        height: 23px
+        width: 2px
+        background: $white
+        transform: rotate(-25deg)
+        border-radius: 3px
+
+.arrow-right
+    display: block
+    position: relative
+    width: 12px
+    height: 47px
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        right: 6px
+        height: 23px
+        width: 2px
+        background: $white
+        transform: rotate(-25deg)
+        border-radius: 3px
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        top: 19px
+        right: 6px
+        height: 23px
+        width: 2px
+        background: $white
+        transform: rotate(25deg)
+        border-radius: 3px
+
+.promo
+    background: url('../img/bg/promo-bg.jpg') center center/cover no-repeat
+    min-height: 440px
+    .container
+        position: relative
+
+.slider-events
+    display: flex
+    align-items: center
+    position: absolute
+    top: 125px
+    right: 0px
+    &__wrapper
+        border: 1px solid $white
+        width: 427px
+        height: 179px
+        margin: 0 25px
+        +inner-item-center
+    &__item
+        background: rgba(255,255,255, 0.9)
+        width: 405px
+        height: 160px
+        display: flex
+        align-items: center
+        padding: 0px 20px 0px
+    .date-block
+        width: 105px
+        height: 128px
+        border: 1px solid $main-color
+        background: $white
+        padding: 17px 12px 0
+        margin-right: 20px
+        text-align: center
+        &__number
+            font-size: 29px
+            font-weight: 500
+            color: $main-color
+        &__month
+            margin-top: 8px
+            font-size: 18px
+            font-weight: 500
+            color: $main-color
+        &__year
+            margin-top: 8px
+            font-size: 35px
+            font-weight: 500
+            color: $main-color
+    .text-block
+        &__title
+            font-size: 14px
+            font-weight: 500
+            color: $main-color
+            text-transform: uppercase
+        &__text
+            margin-top: 12px
+            font-size: 13px
+            color: $black
+            span
+                color: #757575
+
+.about
+    min-height: 838px
+    padding: 66px 0px 49px
+    background: $white
+    &__text
+        text-align: justify
+        text-align-last: center
+        font-size: 17px
+        margin-bottom: 58px
+    &__btns
+        display: flex
+        width: 322px
+        margin: 40px auto
+    &__first-btn
+        margin-right: 15px
+        cursor: pointer
+    &__second-btn
+        background: $black
+        cursor: pointer
+
+.card
+    text-align: justify
+    text-align-last: center
+    &__circle
+        width: 170px
+        height: 170px
+        border: 1px solid $main-color
+        border-radius: 100%
+        margin: 0 auto
+        +inner-item-center
+    &__subtitle
+        font-size: 17px
+        font-weight: 500
+        margin-top: 27px
+    &__descr
+        margin-top: 23px
+        font-size: 15px
+        line-height: 16px
+    &__undertext
+        color: $grey
+        margin-top: 16px
+        font-size: 11px 
+    .btn-classic
+        margin: 23px auto 0
+        text-transform: none
+        background: $secondary-color
+
+.title
+    font-size: 24px
+    font-weight: 500
+    color: $black
+    text-align: center
+    text-transform: uppercase
+
+.reviews
+    background: $creamy-color-opacity
+    min-height: 417px
+    padding: 55px 0px 60px
+    &__inner
+        display: flex
+        align-items: center
+        margin-top: 40px
+        .arrow-left, .arrow-right
+            &::after
+                background: $main-color
+            &::before
+                background: $main-color
+    .comment-block
+        display: flex
+        align-items: center
+        padding: 0px 32px
+        &__item
+            display: flex
+            &:nth-child(odd)
+                margin-right: 48px
+        &__img
+            width: 120px
+            height: 120px
+            border-radius: 100%
+            border: 1px solid $white
+            background: $white
+            margin-right: 35px
+
+            +inner-item-center
+        &__text
+            background: $white
+            position: relative
+            width: 390px
+            min-height: 245px
+            padding: 20px 25px 0px 30px
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                top: 40px
+                left: -23px
+                width: 0
+                height: 0
+                border-style: solid
+                border-width: 22px 23px 22px 0
+                border-color: transparent $white transparent transparent
+        &__title
+            font-size: 17px
+            font-weight: 500
+        &__date
+            margin-top: 10px
+            width: 120px
+            height: 30px
+            background: $grey
+            font-size: 9px
+            color: $white
+            +inner-item-center
+        &__descr
+            font-size: 14pxx
+            line-height: 20px
+            margin-top: 10px
+
+.video
+    min-height: 590px
+    padding: 60px 0 93px
+    background: $white
+    &__main-video
+        width: 682px
+        height: 430px
+        display: block
+        margin: 25px auto 0
+
+.clients
+    min-height: 287px
+    padding: 40px 0 70px
+    background: $creamy-color-opacity
+    &__inner
+        margin-top: 33px
+        display: flex
+        align-items: center
+        .arrow-left, .arrow-right
+            &::after
+                background: $main-color
+            &::before
+                background: $main-color
+    .company
+        display: flex
+        align-items: center
+        padding: 0px 25px
+        &__item
+            width: 180px
+            height: 123px
+            background: $white
+            margin: 0 6px
+            +inner-item-center
+        &__logo
+            max-width: 180px
+        
+.footer
+    min-height: 365px
+    padding-top: 48px
+    background: $black
+    &__title
+        font-size: 14px
+        color: $main-color
+        font-weight: 400
+    &__text-item
+        font-size: 14px
+        color: $white
+        margin-top: 20px
+        display: block
+    
+    &__up
+        min-height: 222px
+        display: flex
+    &__nav
+        margin-right: 60px
+    &__contact
+        display: flex
+        justify-content: space-between
+        flex-grow: 1
+        padding-left: 45px
+        border-left: 1px solid rgba(255, 255, 255, 0.3)
+
+    &__down
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-height: 94px
+        margin-top: 20px
+        border-top: 1px solid rgba(255, 255, 255, 0.3)
+    &__rights
+        font-size: 14px
+        color: $white
+    &__develop
+        display: flex
+        align-items: center
+    &__dev-text
+        font-size: 13px
+        color: rgba(255, 255, 255, 0.3)
+        margin-right: 9px
+
+.desc
+    margin-top: 22px
+    text-align: justify
+    text-align-last: center
+    font-size: 17px
